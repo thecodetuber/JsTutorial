@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		//Advance
+		// for/in
+		// for/of
+		// forEach
+		// map
+
+		// var car = {
+		// 	color: "Red",
+		// 	model: "BMW",
+		// 	wheels: 4,
+		// 	owner: "Me"
+		// }
+
+		// for(key in car) {
+		// 	document.write("Car " + key + " is " + car[key] +"<br/>");
+		// }
+
+		// var fruits = ["Mango", "Apple", "Guava", "Grapes", "Pineapple", "Lichi"]
+
+		// for(fruit of fruits) {
+		// 	document.write(fruit + "<br/>");
+		// }
+
+		// var cars = [
+		// 	{
+		// 		id: 21,
+		// 		color: "Red",
+		// 		model: "BMW",
+		// 		wheels: 4,
+		// 		owner: "Sourav"
+		// 	},
+		// 	{
+		// 		id: 19,
+		// 		color: "Black",
+		// 		model: "Marcedes-Benz",
+		// 		wheels: 4,
+		// 		owner: "Subhajit"
+		// 	},
+		// 	{
+		// 		id: 23,
+		// 		color: "White",
+		// 		model: "Volkswagen Tiguan",
+		// 		wheels: 4,
+		// 		owner: "Tungtang"
+		// 	}
+		// ]
+
+		// cars.map(function(car, index){
+		// 	if(car.id == 19){
+		// 		car.color = "Orange"
+		// 	}
+		// 	return car
+		// })
+
+		// cars.forEach(function(car, index){
+		// 	for(key in car) {
+		// 		document.write("Car " + key + " is " + car[key] +"<br/>");
+		// 	}
+		// 	document.write("<hr>")
+		// })
+
+		// let countries = new Array("India", "China", "USA", "Germany", "Japan");
+		// let fruits = ["Mango", "Apple", "Guava", "Grapes", "Pineapple", "Lichi"];
+
+		// var car = {
+		// 	color: "Red",
+		// 	model: "BMW",
+		// 	wheels: 4,
+		// 	owner: "Me"
+		// }
+
+		// document.write(car instanceof Array)
+
+		// for(let i in car) {
+		// 	document.write(car[i] + "<br/>")
+		// }
+
+		// for(let i=0; i<countries.length; i++) {
+		// 	document.write(countries[i] + "<br/>");
+		// }
+		// document.write("<hr>") //Horizontal Logicless line
+
+		// for(let i in countries) {
+		// 	document.write(countries[i] + "<br/>")
+		// }
+		// document.write("<hr>") //Horizontal Logicless line
+
+
+		// for(country of countries) {
+		// 	document.write(country+ "<br/>");
+		// }
+		// document.write("<hr>") //Horizontal Logicless line
+
+		// countries.forEach(function(country, index) {
+		// 	document.write(country + "<br/>");
+		// })
+
+		// document.write(typeof countries);
+
+		// *What is Function?
+		// *Functions are how many types?
+		// *How to implement function in Javascript?
+		// *Simple Function vs Complex Function
+		// *Arrow functions
+		// *let vs var vs const
+		// *What is recursion?
+		// function addNumber(a, b) {
+		// 	let c = (a+b)
+		// 	return c
+		// }
+
+		// function printMax(a,b,c) {
+		// 	let big = a
+		// 	if(b > big){
+		// 		big = b
+		// 	}
+		// 	if(c > big){
+		// 		big = c
+		// 	}
+		// 	document.write("Biggest number ",big)
+ 	// 	}
+
+ 	// 	function printMin(a,b,c) {
+		// 	let small = a
+		// 	if(b < small) {
+		// 		small = b
+		// 	}
+		// 	if(c < small) {
+		// 		small = c
+		// 	}
+		// 	document.write("Smallest number is " + small)
+		// }
+
+		// //printMin(384,564,234)
+
+		// const isPrime = number => {
+		// 	let primeStatus = true
+		// 	for(let i=2; i<number; i++) {
+		// 		if(number % i == 0) {
+		// 			primeStatus = false
+		// 			break
+		// 		}
+		// 	}
+		// 	return primeStatus
+		// }
+
+		// function sumOfNPrimeNumbers(n) {
+		// 	let total = 0
+		// 	for(let i=1; i<n; i++) {
+		// 		if(isPrime(i)) {
+		// 			total += i
+		// 		}
+		// 	}
+		// 	return total
+		// }
+
+		// function euclideanDistance(x1,y1, x2,y2) {
+		// 	let xDistance = square(x1-x2)
+		// 	let yDistance = square(y1-y2)
+
+		// 	return Math.sqrt( xDistance + yDistance )
+
+		// 	function square(number) {
+		// 		return Math.pow(number, 2)
+		// 	}
+		// }
+		
+		// function factorial(n) {
+		// 	if(n == 1 || n == 0) {
+		// 		return 1
+		// 	} else {
+		// 		return n * factorial(n-1)
+		// 	}
+		// }
+
+		// document.write(factorial(5))
+
+
+		// class Mathematics {
+		// 	constructor(a, b) {
+		// 		this.magicA = a
+		// 		this.magicB = b
+		// 	}
+
+		// 	doAddition() {
+		// 		return this.magicA + this.magicB	
+		// 	}
+
+		// 	doSubtraction() {
+		// 		return this.magicA - this.magicB
+		// 	}
+
+		// 	static documentation() {
+		// 		document.write("This class is used for mathematical operations <br/>")
+		// 	}
+		// }
+
+		// class Science extends Mathematics {
+		// 	constructor(subject,a,b) {
+		// 		super(a,b)
+		// 		this.a = a
+		// 		this.b = b
+		// 		this.subjectName = subject
+		// 	}
+
+		// 	info() {
+		// 		document.write(this.subjectName+" created the magic number "+this.a+" and "+this.b)
+		// 	}
+
+		// 	operation() {
+		// 		document.write("Sum is "+this.doAddition()+", Subtraction is "+this.doSubtraction())
+		// 	}
+		// }
+
+		// class Mathematics {
+		// 	constructor(a) {
+		// 		this._magic = a
+		// 	}
+
+		// 	set magicNumber(x) {
+		// 		this._magic = x
+		// 	}
+
+		// 	get magicNumber() {
+		// 		return this._magic
+		// 	}
+		// }
+
+		class Mathematics {
+			constructor(a, b) {
+				this.magicA = a
+				this.magicB = b
+			}
+
+			doAddition(a,b) {
+				document.write("Mathematics is invoked")	
+			}
+
+			doSubtraction() {
+				return this.magicA - this.magicB
+			}
+
+			static documentation() {
+				document.write("This class is used for mathematical operations <br/>")
+			}
+		}
+
+		class Science extends Mathematics {
+			constructor(subject,a,b) {
+				super(a,b)
+				this.a = a
+				this.b = b
+				this.subjectName = subject
+				//this.info = this.info.bind(this)
+			}
+
+			info = () => {
+				document.write(this.subjectName+" created the magic number "+this.a+" and "+this.b)
+			}
+
+			operation() {
+				document.write("Sum is "+this.doAddition()+", Subtraction is "+this.doSubtraction())
+			}
+
+			doAddition() {
+				document.write("Science is invoked")
+			}
+		}
+
+		var sc = new Mathematics(100, 40)
+		sc.doAddition(100, 300)
+
+	</script>
+</body>
+</html>
